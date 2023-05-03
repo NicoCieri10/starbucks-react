@@ -8,10 +8,10 @@ const Header = () => {
         <img className="header__logo" src={logo} alt="logo.png" />
       </div>
       <nav className="header__navbar">
-        <a className="header__navbar-link" >Inicio</a>
-        <a className="header__navbar-link" >Cafe</a>
-        <a className="header__navbar-link" >Sobre Nosotros</a>
-        <a className="header__navbar-link" >Delivery</a>
+        <a className="header__navbar-link" href='/' >Inicio</a>
+        <a className="header__navbar-link" href='/' >Cafe</a>
+        <a className="header__navbar-link" href='/' >Sobre Nosotros</a>
+        <a className="header__navbar-link" href='/' >Delivery</a>
       </nav>
       <i className="header__icon-0 bi bi-list"></i>
       <i className="header__icon-1 bi bi-person-circle"></i>
