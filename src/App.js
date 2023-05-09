@@ -6,7 +6,7 @@ import './css/header.css';
 function App() {
   return (
     <>
-    <Header/>
+      <Header/>
     </>
   );
 }
