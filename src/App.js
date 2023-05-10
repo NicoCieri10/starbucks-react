@@ -10,10 +10,10 @@ function App() {
     <>
       <Header />
       <Main />
-      <Gallery />
+      {/* <Gallery />
       <Contact />
       <Cards />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
