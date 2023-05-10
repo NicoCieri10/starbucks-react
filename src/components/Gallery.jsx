@@ -1,25 +1,18 @@
 import React from 'react';
-import '../css/header.css';
-import BtnHeader from './BtnHeader.jsx';
-import logo from '../image/logo.png';
+import '../css/gallery.css';
+import gallery1 from '../image/gallery-1.png';
+import gallery2 from '../image/gallery-2.png';
+import gallery3 from '../image/gallery-3.png';
 
 
-const Header = () => {
+const Gallery = () => {
   return (
-    <header className="header">
-      <div className="header__container-logo">
-        <img className="header__logo" src={logo} alt="logo.png" />
-      </div>
-      <nav className="header__nav">
-        <BtnHeader content={'Inicio'} />
-        <BtnHeader content={'Cafe'} />
-        <BtnHeader content={'Sobre Nosotros'} />
-        <BtnHeader content={'Delivery'} />
-      </nav>
-      <i className="header__icon-0 bi bi-list"></i>
-      <i className="header__icon-1 bi bi-person-circle"></i>
-    </header>
+    <section className="gallery">
+      <img className="gallery__img" src={gallery1} alt="gallery-1.png" />
+      <img className="gallery__img" src={gallery2} alt="gallery-2.png" />
+      <img className="gallery__img" src={gallery3} alt="gallery-3.png" />
+    </section>
   )
 }
 
-export default Header
+export default Gallery

@@ -2,7 +2,7 @@ import React from 'react';
 
 const BtnHeader = (props) => {
   return (
-    <a className="header__nav-link" href={'#'}>
+    <a className="header__nav-link" href={'/'}>
       {props.content}
     </a>
   );

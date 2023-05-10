@@ -61,7 +61,7 @@ img {
     .header__icon-0 {
         display: none;
     }
-    
+
     .header__icon-1 {
         display: block;
         font-size: var(--size-icons);

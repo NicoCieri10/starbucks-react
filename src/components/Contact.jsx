@@ -1,25 +1,43 @@
 import React from 'react';
-import '../css/header.css';
-import BtnHeader from './BtnHeader.jsx';
-import logo from '../image/logo.png';
+import '../css/contact.css';
 
 
-const Header = () => {
-  return (
-    <header className="header">
-      <div className="header__container-logo">
-        <img className="header__logo" src={logo} alt="logo.png" />
-      </div>
-      <nav className="header__nav">
-        <BtnHeader content={'Inicio'} />
-        <BtnHeader content={'Cafe'} />
-        <BtnHeader content={'Sobre Nosotros'} />
-        <BtnHeader content={'Delivery'} />
-      </nav>
-      <i className="header__icon-0 bi bi-list"></i>
-      <i className="header__icon-1 bi bi-person-circle"></i>
-    </header>
-  )
+const Contact = () => {
+    return (
+        <section className="contact">
+            <h3 className="contact__title">Contactanos</h3>
+            <form className="contact__form">
+                <div className="contact__email">
+                    <label className="contact__text--email">correo electronico</label>
+                    <input
+                        className="contact__input--email"
+                        placeholder="coloque su correo electrónico"
+                        type="email"
+                        name="email_user"
+                        required
+                    />
+                </div>
+                <div className="contact__comment">
+                    <label className="contact__text--comment">comentario</label>
+                    <textarea
+                        className="contact__textarea-0--comment"
+                        placeholder="coloque su comentario"
+                        cols="30"
+                        rows="10"
+                        required
+                    ></textarea>
+                    <textarea
+                        className="contact__textarea-1--comment"
+                        placeholder="coloque su comentario"
+                        cols="30"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+                <input className="contact__btn" type="submit" />
+            </form>
+        </section>
+    )
 }
 
-export default Header
+export default Contact

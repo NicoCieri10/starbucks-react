@@ -1,25 +1,32 @@
 import React from 'react';
-import '../css/header.css';
-import BtnHeader from './BtnHeader.jsx';
-import logo from '../image/logo.png';
+import '../css/footer.css';
 
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className="header">
-      <div className="header__container-logo">
-        <img className="header__logo" src={logo} alt="logo.png" />
+    <footer className="footer">
+      <div className="footer__container">
+        <div className="footer__links-user">
+          <a className="footer__links" href={"/"}>inicia sesión</a>
+          <a className="footer__links" href={"/"}>registrate</a>
+        </div>
+        <div className="footer__network">
+          <a className="footer__network-i" href={"/"}>
+            <i className="bi bi-whatsapp"></i>
+          </a>
+          <a className="footer__network-i" href={"/"}>
+            <i className="bi bi-facebook"></i>
+          </a>
+          <a className="footer__network-i" href={"/"}>
+            <i className="bi bi-twitter"></i>
+          </a>
+        </div>
+        <div className="footer__container-contact-us">
+          <a className="footer__contact-us" href={"/"}>contáctanos aquí</a>
+        </div>
       </div>
-      <nav className="header__nav">
-        <BtnHeader content={'Inicio'} />
-        <BtnHeader content={'Cafe'} />
-        <BtnHeader content={'Sobre Nosotros'} />
-        <BtnHeader content={'Delivery'} />
-      </nav>
-      <i className="header__icon-0 bi bi-list"></i>
-      <i className="header__icon-1 bi bi-person-circle"></i>
-    </header>
+    </footer>
   )
 }
 
-export default Header
+export default Footer
